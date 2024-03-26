@@ -10,24 +10,10 @@ export type RootStackParamList = {
     Buy: undefined;
 };
 
-const StackNavigation: React.FC = () => {
+const BuyNavigation: React.FC = () => {
     const Stack = createStackNavigator();
     return (
         <Stack.Navigator>
-            <Stack.Screen
-                name="Home"
-                component={Home}
-                options={{
-                    headerShown: false,
-                    headerTitleAlign: "center"
-                }}
-            />
-            <Stack.Screen
-                name="Vegetables"
-                component={Vegetables}
-                options={{ headerShown: false }}
-            />
-
             <Stack.Screen
                 name="Buy"
                 component={Buy}
@@ -40,4 +26,4 @@ const StackNavigation: React.FC = () => {
     )
 }
 
-export default StackNavigation;
+export default BuyNavigation;

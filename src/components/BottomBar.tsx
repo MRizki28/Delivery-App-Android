@@ -4,6 +4,8 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import { faBarChart } from '@fortawesome/free-regular-svg-icons/faBarChart'
 import StackNavigation from "./StackNavigation";
+import BuyNavigation from "./BuyNavigation";
+import Vegetables from "../pages/Vegetables/Vegetables";
 
 const BottomBar: React.FC = () => {
     const Tab = createBottomTabNavigator();
@@ -20,6 +22,13 @@ const BottomBar: React.FC = () => {
             <Tab.Screen
                 name="Testing"
                 component={StackNavigation}
+                options={{
+                    headerTitleAlign: "center",
+                }}
+            />
+            <Tab.Screen
+                name="Buy1"
+                component={BuyNavigation}
                 options={{
                     headerTitleAlign: "center",
                 }}
